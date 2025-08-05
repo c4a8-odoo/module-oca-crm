@@ -4,7 +4,7 @@
 {
     "name": "CRM Project Task",
     "summary": "Create tasks from lead or opportunity",
-    "version": "17.0.1.0.1",
+    "version": "18.0.1.0.1",
     "development_status": "Alpha",
     "category": "Sales/CRM",
     "website": "https://github.com/OCA/crm",
