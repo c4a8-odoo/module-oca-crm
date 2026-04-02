@@ -29,9 +29,9 @@ class CrmLeadStageProbabilityUpdate(models.TransientModel):
                         "Following stages must be set as 'Change Probability "
                         "Automatically' in order to update their related leads:"
                         "\n\n"
-                        "%s"
+                        "%(stages)s",
+                        stages="\n".join([s.name for s in stages_missing_on_change]),
                     )
-                    % "\n".join([s.name for s in stages_missing_on_change])
                 )
             line_ids = []
             for stage in stages:
